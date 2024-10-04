@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://source.unsplash.com/random/1920x1080/?nature,water'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.task-list-container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for tasks */
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 400px; /* Set a maximum height */
+    overflow-y: auto; /* Scroll if content exceeds max height */
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.priority {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.priority.low {
+    background-color: #d4edda;
+}
+
+.priority.medium {
+    background-color: #ffeeba;
+}
+
+.priority.high {
+    background-color: #f8d7da;
+}
+
+.task-buttons {
+    display: flex;
+}
+
+.task-buttons button {
+    margin-left: 5px;
+}
